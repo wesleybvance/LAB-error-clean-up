@@ -1,6 +1,7 @@
+import { v4 as uuidv4 } from 'uuid';
 import { houses, students, voldysArmy } from './sample_data/studentData';
 import renderToDOM from './renderToDOM';
-import createId from './createId';
+// import createId from './createId';
 import studentsOnDom from './studentsOnDom';
 import filterBtnRow from './filterBtnRow';
 import studentAreas from './studentAreas';
@@ -16,7 +17,7 @@ export const sortStudent = (e) => {
 
     // create the new student object
     students.push({
-      id: createId(students),
+      id: uuidv4(students),
       name: student.value,
       house: sortingHat.house,
       crest: sortingHat.crest

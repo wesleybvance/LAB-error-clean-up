@@ -1,4 +1,4 @@
-import { renderToDOM } from './renderToDOM';
+import renderToDOM from './renderToDOM';
 
 const startSortingBtn = () => {
   const domString = '<button type="button" class="btn btn-info" id="start-sorting">Start the Sorting Ceremony!</button>';
